@@ -1,48 +1,37 @@
-
-
-
 #include <stdio.h>
 
-
-
 /**
- *
- *  * main - entry point
- *
- *   * Description - "prints the size of various types"
- *
- *    * Return: 0
- *
- *     */
-
-
+  * main - Entry point
+  *
+  * Return: 0 on success
+  */
 
 int main(void)
 
 {
 
-		char c;
+	int i;
 
-			int i;
+	char c;
 
-				long int l;
+	long l;
 
-					long long int l2;
+	long long ll;
 
-						float f;
+	float f;
 
 
 
-							printf("Size of a char: %i byte(s)\n", sizeof(c));
+	printf("Size of a char: %d byte(s)\n", sizeof(c));
 
-								printf("Size of an int: %i byte(s)\n", sizeof(i));
+	printf("Size of an int: %d byte(s)\n", sizeof(i));
 
-									printf("Size of a long int: %i byte(s)\n", sizeof(l));
+	printf("Size of a long int: %d byte(s)\n", sizeof(l));
 
-										printf("Size of a long long int: %i byte(s)\n", sizeof(l2));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(ll));
 
-											printf("Size of a float: %i byte(s)\n", sizeof(f));
+	printf("Size of a float: %d byte(s)\n", sizeof(f));
 
-												return (0);
+	return (0);
 
 }
