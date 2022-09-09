@@ -10,27 +10,23 @@ int main(void)
 
 {
 
+	char sm_letter = 'a';
+
 	int num = 48;
 
 
 
-	for (; num < 58 ; num++)
+	for (; sm_letter <= 'f'; sm_letter++)
 
 	{
 
-		putchar(num);
+		for (; num < 58; num++)
 
-		if (num < 57)
+			putchar(num);
 
-		{
+		putchar(sm_letter);
 
-			putchar(',');
-
-			putchar(' ');
-
-		}
-
-		if (num == 57)
+		if (sm_letter == 'f')
 
 			putchar('\n');
 
