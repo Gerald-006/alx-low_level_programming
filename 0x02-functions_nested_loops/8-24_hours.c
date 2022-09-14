@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints evry time of the day
+ * jack_bauer - prints every time of the day
  *
  * Return: two numbers
  */
