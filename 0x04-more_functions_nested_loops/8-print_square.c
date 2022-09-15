@@ -1,30 +1,41 @@
 #include "main.h"
 
+
+
 /**
- * print_square - print hashes square
- * @size: size of square.
- * Return: void
+ * jack_bauer - Prints every minute of the day of
+ *              Jack Bauer, starting from 00:00 to 23:59.
  */
 
-void print_square(int size)
+void jack_bauer(void)
 
 {
 
-	int i, j;
+	int hour, minute;
 
-	for (i = 0; i < size; i++)
+
+
+	for (hour = 0; hour <= 23; hour++)
 
 	{
 
-		for (j = 0; j < size; j++)
+		for (minute = 0; minute <= 59; minute++)
 
 		{
 
-			_putchar(35);
-		}
+			_putchar((hour / 10) + '0');
 
-		if (i != size - 1)
+			_putchar((hour % 10) + '0');
+
+			_putchar(':');
+
+			_putchar((minute / 10) + '0');
+
+			_putchar((minute % 10) + '0');
+
 			_putchar('\n');
+
+		}
 
 	}
 
